@@ -53,6 +53,12 @@
   #define BEEPER_PIN                          37  // Always define beeper pin so Play Tone works with ExtUI
 #endif
 
+#ifndef BLTOUCH
+  #ifndef Z_MIN_PIN
+    #define Z_MIN_PIN                         18
+    #define Z_MAX_PIN                         19
+  #endif
+
 #define EXP1_PIN                              65  // A11 - Used by CR2020 Industrial series for case
 #define EXP2_PIN                              66  // A12
 #define EXP3_PIN                              11  // SERVO0_PIN
