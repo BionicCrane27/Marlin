@@ -58,6 +58,7 @@
     #define Z_MIN_PIN                         18
     #define Z_MAX_PIN                         19
   #endif
+#endif
 
 #define EXP1_PIN                              65  // A11 - Used by CR2020 Industrial series for case
 #define EXP2_PIN                              66  // A12
