@@ -43,6 +43,14 @@
 
 #define PS_ON_PIN                             40  // Used by CR2020 Industrial series
 
+#ifndef BLTOUCH
+    #define Z_MIN_PIN                         18
+    #define Z_MAX_PIN                         19
+    #else
+    #define Z_MIN_PIN                         19
+    #define Z_MAX_PIN                         18
+#endif
+
 #if ENABLED(CASE_LIGHT_ENABLE) && !defined(CASE_LIGHT_PIN)
   #define CASE_LIGHT_PIN                      65
 #endif
@@ -52,12 +60,6 @@
 #ifndef BEEPER_PIN
   #define BEEPER_PIN                          37  // Always define beeper pin so Play Tone works with ExtUI
 #endif
-
-#ifndef BLTOUCH
-  #ifndef Z_MIN_PIN
-    #define Z_MIN_PIN                         18
-    #define Z_MAX_PIN                         19
-  #endif
 
 #define EXP1_PIN                              65  // A11 - Used by CR2020 Industrial series for case
 #define EXP2_PIN                              66  // A12
