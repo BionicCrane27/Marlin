@@ -44,8 +44,13 @@
 #define PS_ON_PIN                             40  // Used by CR2020 Industrial series
 
 #ifdef BLTOUCH
+<<<<<<< HEAD
     #define Z_MIN_PIN                         19
     #define Z_MAX_PIN                         18
+=======
+  #define Z_MIN_PIN                           19
+  #define Z_MAX_PIN                           18
+>>>>>>> ed29ba8bb17e3e18997db83a6dc62f16aff50eed
 #endif
 
 #if ENABLED(CASE_LIGHT_ENABLE) && !defined(CASE_LIGHT_PIN)
